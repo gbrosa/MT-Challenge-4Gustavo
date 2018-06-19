@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> MT Trad by Watson</title>
+</head>
+<body>
+<h1> Welcome to the Gustavo's Translation page.</h1>
+<h4>Please type the text to be translated. Below you can see same sample.</h4>
+<ul>
+    <li>Nunca se sabe lo que puede hacer hasta que intente</li>
+    <li>Vous ne savez jamais ce que vous pouvez faire jusqu'à ce que vous essayez</li>
+    <li>Non sai mai cosa puoi fare finché non ci provi</li>
+    <li>Você nunca sabe o que você pode fazer até que você tente</li>
+    <li>Sie können nie wissen, was Sie tun, wenn Sie versuchen</li>
+    <li>너을 시도할 때 수행할 수 있는 작업은 알</li>
+    <li>أنت لا تعرف ما يمكنك فعله حتى محاولتك.</li>
+</ul>
+<hr>
+<form method="post" action="/MTChallenge4">
+    <input type="text" name="texto_2_trad" placeholder="Enter text to be translated">
+    <br>
+    <br>
+    <input type="submit" value="Translate" name="ok"/>
+    <br>
+    <left><h2>Original text: {{ texto_2_trad }} </h2></left>
+    <left><h2>Translated text: {{ texto_translated}}</h2></left> 
+
+</form>
+</body>
+</html>
